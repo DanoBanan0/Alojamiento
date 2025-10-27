@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Models\Alojamiento;
+use App\Models\Alojamiento;
 
 class AlojamientoController extends Controller
 {
