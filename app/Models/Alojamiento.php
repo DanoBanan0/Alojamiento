@@ -19,7 +19,6 @@ class Alojamiento extends Model
 
     public function users()
     {
-        // Un alojamiento "pertenece a muchos" usuarios
         return $this->belongsToMany(User::class);
     }
 }

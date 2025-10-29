@@ -49,7 +49,6 @@ class User extends Authenticatable
 
     public function alojamientos()
     {
-        // Un usuario "pertenece a muchos" alojamientos
         return $this->belongsToMany(Alojamiento::class);
     }
 }

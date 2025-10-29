@@ -16,7 +16,6 @@ Route::get('/', [AlojamientoController::class, 'index'])->name('landing.index');
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
-// Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::post('/alojamientos/{alojamiento}/toggle', [UserAlojamientoController::class, 'toggle'])->middleware(['auth'])->name('alojamientos.toggle');
