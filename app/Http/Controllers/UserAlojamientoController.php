@@ -1,11 +1,10 @@
 <?php
-// app/Http/Controllers/UserAlojamientoController.php
 
 namespace App\Http\Controllers;
 
-use App\Models\Alojamiento; // Importa el modelo
+use App\Models\Alojamiento;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth; // Importa el Facade de Autenticación
+use Illuminate\Support\Facades\Auth;
 
 class UserAlojamientoController extends Controller
 {
