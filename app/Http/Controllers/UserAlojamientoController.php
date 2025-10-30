@@ -9,12 +9,18 @@ use Illuminate\Support\Facades\Auth;
 class UserAlojamientoController extends Controller
 {
     public function toggle(Alojamiento $alojamiento)
-    {
+{
+    $user = Auth::user();
 
-        $user = Auth::user();
+    $wasAttached = $user->alojamientos()->where('alojamiento_id', $alojamiento->id)->exists();
 
-        $user->alojamientos()->toggle($alojamiento->id);
+    $user->alojamientos()->toggle($alojamiento->id);
 
-        return back();
-    }
+    $message = $wasAttached
+        ? 'Alojamiento retirado de tu cuenta.'
+        : 'Alojamiento agregado a tu cuenta.';
+
+    return back()->with('success', $message);
+}
+
 }

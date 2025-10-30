@@ -28,6 +28,11 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+        // Redirección según rol
+        if (Auth::user()->is_admin) {
+            return redirect()->route('admin.alojamientos.index');
+        }
+
         return redirect()->intended(route('dashboard', absolute: false));
     }
 
