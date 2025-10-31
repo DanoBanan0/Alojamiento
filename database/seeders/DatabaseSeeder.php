@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(5)->create();
         $this->call(AlojamientoSeeder::class);
+        $this->call(AdminUserSeeder::class);
 
         //Alojamiento::factory(2)->create();
 
