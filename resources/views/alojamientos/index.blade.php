@@ -64,40 +64,36 @@
         </div>
     </section>
 
-<!-- ALOJAMIENTOS -->
-<section id="alojamientos" class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-    <div class="flex flex-col items-center text-center">
-        <h2 class="text-3xl font-semibold text-jet">Nuestros Alojamientos</h2>
-        <p class="text-sm text-gray-500 mt-1">Encuentra el lugar perfecto para tu próxima aventura</p>
-    </div>
+    <!-- ALOJAMIENTOS -->
+    <section id="alojamientos" class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+        <div class="flex flex-col items-center text-center">
+            <h2 class="text-3xl font-semibold text-jet">Nuestros Alojamientos</h2>
+            <p class="text-sm text-gray-500 mt-1">Encuentra el lugar perfecto para tu próxima aventura</p>
+        </div>
 
-    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        @forelse ($alojamientos as $alojamiento)
-        <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
-            <img src="{{ $alojamiento->imagen_url }}" alt="{{ $alojamiento->nombre }}"
-                class="w-full h-48 object-cover">
-            <div class="p-4 flex flex-col flex-grow">
-                <h3 class="text-lg font-semibold text-jet">{{ $alojamiento->nombre }}</h3>
-                <p class="text-sm text-gray-600 mt-1 flex-grow">{{ $alojamiento->descripcion }}</p>
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            @forelse ($alojamientos as $alojamiento)
+            <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
+                <img src="{{ $alojamiento->imagen_url }}" alt="{{ $alojamiento->nombre }}"
+                    class="w-full h-48 object-cover">
+                <div class="p-4 flex flex-col flex-grow">
+                    <h3 class="text-lg font-semibold text-jet">{{ $alojamiento->nombre }}</h3>
+                    <p class="text-sm text-gray-600 mt-1 flex-grow">{{ $alojamiento->descripcion }}</p>
 
-                <div class="mt-4 flex items-center justify-between">
-                    <div>
-                        <div class="text-xl font-bold text-red-600">${{ $alojamiento->precio_por_noche }}
-                            <span class="text-sm font-medium text-gray-500">/ noche</span>
+                    <div class="mt-4 flex items-center justify-between">
+                        <div>
+                            <div class="text-xl font-bold text-red-600">${{ $alojamiento->precio_por_noche }}
+                                <span class="text-sm font-medium text-gray-500">/ noche</span>
+                            </div>
                         </div>
                     </div>
-                    <a href="#reservar"
-         class="inline-flex items-center justify-center px-4 py-2 bg-[#0f172a] text-white rounded-md text-sm font-medium hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0f172a] shadow-sm min-w-[92px] z-10">
-        Reservar
-      </a>
                 </div>
-            </div>
-        </article>
-        @empty
-        <p class="text-gray-500 col-span-full text-center">No hay alojamientos disponibles en este momento.</p>
-        @endforelse
-    </div>
-</section>
+            </article>
+            @empty
+            <p class="text-gray-500 col-span-full text-center">No hay alojamientos disponibles en este momento.</p>
+            @endforelse
+        </div>
+    </section>
 
 
     <!-- SERVICIOS -->
