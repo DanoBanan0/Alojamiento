@@ -11,16 +11,17 @@ class DashboardController extends Controller
     public function index()
     {
         if (Auth::check() && Auth::user()->is_admin) {
-            // Redirige al dashboard de administrador
+            // Si el usuario es administrador, redirige a su dashboard
             return redirect()->route('admin.alojamientos.index');
         }
 
-        // Dashboard de usuario normal
-        $alojamientos = Alojamiento::all();
+        // Si es un usuario normal, solo muestra alojamientos activos
+        $alojamientos = Alojamiento::where('activo', true)
+            ->orderByDesc('destacado')
+            ->get();
+
         return view('dashboard', [
             'alojamientos' => $alojamientos
         ]);
     }
 }
-
-
