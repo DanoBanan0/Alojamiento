@@ -47,7 +47,7 @@
     <!-- HERO -->
     <section class="relative pt-16">
         <div class="h-[70vh] relative overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1533777324565-a040eb52fac2?q=80&w=1600&auto=format&fit=crop"
+            <img src="https://raw.githubusercontent.com/victoriavalencia06/project-images/refs/heads/main/hotelFairFields/exterior1.png"
                 alt="Alojamiento hero" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black/60"></div>
 
@@ -151,14 +151,14 @@
 
     <!-- GALERÍA -->
     <section id="galeria" class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
-        <div class="flex items-center justify-between">
+        <div class="flex flex-col items-center text-center mb-8">
             <h2 class="text-2xl font-semibold text-gray-900">Galería de instalaciones</h2>
-            <p class="text-sm text-gray-500">Conoce nuestros espacios destacados.</p>
+            <p class="text-sm text-gray-500 mt-1">Conoce nuestros espacios destacados</p>
         </div>
 
         <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div class="rounded-xl overflow-hidden shadow">
-                <img src="https://images.unsplash.com/photo-1542317854-7c4f35a6f3d6?q=80&w=1200&auto=format&fit=crop"
+                <img src="https://raw.githubusercontent.com/victoriavalencia06/project-images/refs/heads/main/hotelFairFields/lobby.png"
                     alt="Lobby" class="w-full h-48 object-cover">
                 <div class="p-3 bg-white">
                     <div class="font-semibold text-gray-900">Lobby</div>
@@ -167,7 +167,7 @@
             </div>
 
             <div class="rounded-xl overflow-hidden shadow">
-                <img src="https://images.unsplash.com/photo-1501117716987-c8e0b3a4a1d4?q=80&w=1200&auto=format&fit=crop"
+                <img src="https://raw.githubusercontent.com/victoriavalencia06/project-images/refs/heads/main/hotelFairFields/piscina.png"
                     alt="Piscina" class="w-full h-48 object-cover">
                 <div class="p-3 bg-white">
                     <div class="font-semibold text-gray-900">Piscina</div>
@@ -176,7 +176,7 @@
             </div>
 
             <div class="rounded-xl overflow-hidden shadow">
-                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop"
+                <img src="https://raw.githubusercontent.com/victoriavalencia06/project-images/refs/heads/main/hotelFairFields/restaurante.png"
                     alt="Restaurante" class="w-full h-48 object-cover">
                 <div class="p-3 bg-white">
                     <div class="font-semibold text-gray-900">Restaurante</div>
@@ -185,11 +185,64 @@
             </div>
 
             <div class="rounded-xl overflow-hidden shadow">
-                <img src="https://images.unsplash.com/photo-1505691723518-36a43b66a2f6?q=80&w=1200&auto=format&fit=crop"
+                <img src="https://raw.githubusercontent.com/victoriavalencia06/project-images/refs/heads/main/hotelFairFields/suite.png"
                     alt="Suite" class="w-full h-48 object-cover">
                 <div class="p-3 bg-white">
                     <div class="font-semibold text-gray-900">Suite</div>
                     <div class="text-xs text-gray-500 mt-1">Con vista al mar</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="bg-white pt-4 pb-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col items-center text-center mb-12">
+                <h2 class="text-3xl font-semibold text-jet">Sobre Nosotros</h2>
+                <p class="text-sm text-gray-500 mt-1">Conoce nuestra historia y compromiso</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Contenido (ahora a la izquierda) -->
+                <div class="space-y-6 order-2 lg:order-1">
+
+                    <h3 class="text-2xl font-semibold text-gray-900">Más de 20 años de excelencia</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        En Fairfield Hotel nos dedicamos a crear experiencias memorables para nuestros huéspedes.
+                        Desde nuestra fundación, hemos combinado la calidez de la hospitalidad tradicional
+                        con las comodidades modernas que nuestros clientes merecen.
+                        Nuestro equipo está comprometido con ofrecer un servicio excepcional, asegurando que cada
+                        estancia sea perfecta. Ya sea que visites por negocios o placer, encontrarás en Fairfield
+                        Hotel tu hogar lejos de casa.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 pt-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-award text-red-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Excelencia</div>
+                                <div class="text-xs text-gray-500">Premio a la calidad 2022</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-heart text-red-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Pasión</div>
+                                <div class="text-xs text-gray-500">Servicio con corazón</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2">
+                    <img src="https://raw.githubusercontent.com/victoriavalencia06/project-images/refs/heads/main/hotelFairFields/personal1.png"
+                        alt="Nuestro hotel" class="w-full h-80 object-cover">
                 </div>
             </div>
         </div>
