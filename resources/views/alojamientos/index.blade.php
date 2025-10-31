@@ -201,11 +201,11 @@
 
             <!-- Columna 1: Información -->
             <div>
-                <h4 class="text-xl font-semibold">StayElite</h4>
+                <h4 class="text-xl font-semibold">Fairfield Hotel</h4>
                 <p class="mt-3 text-sm text-white/70 leading-relaxed">
                     Dirección: Calle Falsa 123, Ciudad <br>
-                    Tel: +123 456 789 <br>
-                    Email: contacto@stayelite.com
+                    Tel: +503 7765 0933 <br>
+                    Email: contacto@fairfielhotel.com
                 </p>
             </div>
 
@@ -246,7 +246,7 @@
         </div>
 
         <div class="mt-10 text-center text-sm text-white/50 border-t border-white/5 pt-6">
-            © <span id="year"></span> StayElite. Todos los derechos reservados.
+            © <span id="year"></span> Fairfield Hotel. Todos los derechos reservados.
         </div>
 
         <script>
