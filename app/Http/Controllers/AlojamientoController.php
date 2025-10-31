@@ -8,60 +8,54 @@ use App\Models\Alojamiento;
 class AlojamientoController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Mostrar los alojamientos disponibles (solo activos).
      */
     public function index()
     {
-        $alojamientos = Alojamiento::all();
+        // Solo mostrar alojamientos activos, y los destacados primero
+        $alojamientos = Alojamiento::where('activo', true)
+            ->orderByDesc('destacado')
+            ->get();
 
-        return view('alojamientos.index', [
-            'alojamientos' => $alojamientos
-        ]);
+        return view('alojamientos.index', compact('alojamientos'));
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Mostrar todos los alojamientos (para el admin).
      */
+    public function adminIndex()
+    {
+        // Mostrar todos (activos e inactivos)
+        $alojamientos = Alojamiento::orderByDesc('destacado')->get();
+
+        return view('admin.alojamientos.index', compact('alojamientos'));
+    }
+
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         //
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(string $id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(string $id)
     {
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(string $id)
     {
         //
