@@ -3,9 +3,18 @@
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <div class="w-full space-y-8">
-        <!-- Header -->
         <div class="text-center">
-            <h2 class="text-3xl font-bold text-gray-900 pt-2">Iniciar Sesión</h2>
+            <!-- Logo-->
+            <div class="flex justify-center mb-4">
+                <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-red-100 shadow-lg">
+                    <img 
+                        src="https://raw.githubusercontent.com/victoriavalencia06/project-images/3b8fbedcb926b2d62d8b04bc6ae46638fed05288/hotelFairFields/logo/logo1.png" 
+                        alt="Fairfield Hotel"
+                        class="w-full h-full object-cover"
+                    >
+                </div>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900">Iniciar Sesión</h2>
             <p class="mt-2 text-sm text-gray-600">Accede a tu cuenta</p>
         </div>
 
